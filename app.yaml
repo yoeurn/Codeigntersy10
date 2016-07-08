@@ -1,0 +1,24 @@
+application: my-codeigniter
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: false
+
+handlers:
+- url: /user_guide
+  static_dir: CodeIgniter_2.1.4/user_guide
+
+- url: /assets/js/*
+  static_dir: CodeIgniter_2.1.4/assets/js
+
+- url: /assets/css/*
+  static_dir: CodeIgniter_2.1.4/assets/css
+
+- url: /assets/images/*
+  static_dir: CodeIgniter_2.1.4/assets/images
+
+- url: /
+  script: CodeIgniter_2.1.4/index.php
+
+- url: /(.+)
+  script: CodeIgniter_2.1.4/index.php
